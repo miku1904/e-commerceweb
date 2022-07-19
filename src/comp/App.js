@@ -1,10 +1,14 @@
-import SignUp from "./SignUp";
+// import SignIn from "./signIn/SigIn";
+// import SignUp from "../comp/signUp/SignUp";
+import ApplicationRoutes from "./routes/Routes";
 
 
 function App() {
   return (
     <div className="App">
-       <SignUp/>
+       {/* <SignUp/> */}
+      <ApplicationRoutes />
+       {/* <SignIn/> */}
     </div>
   );
 }

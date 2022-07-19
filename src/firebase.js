@@ -1,14 +1,18 @@
 import firebase from "firebase/app"
 import "firebase/auth"
 
-const app ={
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_ID,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID
-}
+const firebaseConfig = {
+    apiKey: "AIzaSyCda_aadtut-jb3yRpg5hXP_pr4VQUUUis",
+    authDomain: "shopping-cart-5a054.firebaseapp.com",
+    projectId: "shopping-cart-5a054",
+    storageBucket: "shopping-cart-5a054.appspot.com",
+    messagingSenderId: "179576882327",
+    appId: "1:179576882327:web:21f967f29500c34e4995d2"
+};
 
-export const auth = app.auth()
-export default app;
+const firebaseApp = firebase.initializeApp(firebaseConfig)
+
+const auth = firebase.auth()
+const provider = new firebase.auth.GoogleAuthProvider()
+
+export {auth, provider}
