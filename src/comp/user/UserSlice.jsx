@@ -16,4 +16,4 @@ const UserSlice = ({
 })
 
 export const {} = UserSlice.actions
-export default UserSlice.reducer;
+export default UserSlice.reducers;

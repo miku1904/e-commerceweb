@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SignIn from "../signIn/SigIn";
-import SignUp from "../signUp/SignUp";
+import Dashbord from "../comp/dashboard/Dashbord";
+import SignIn from "../comp/signIn/SigIn";
+import SignUp from "../comp/signUp/SignUp";
 
 
 
@@ -11,7 +12,8 @@ function ApplicationRoutes() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<SignIn />} />
-          <Route exact path="/SignUp" element={<SignUp />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/dashboard" element={<Dashbord />} />
         </Routes>
       </BrowserRouter>
     </>

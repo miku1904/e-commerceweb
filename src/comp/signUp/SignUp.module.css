@@ -79,3 +79,11 @@ button {
   font-size: 16px;
   line-height: 18px;
 }
+
+.link{
+    display: flex;
+    width: 235px;
+    margin: 0 auto;
+    margin-top: -50px;
+    
+}

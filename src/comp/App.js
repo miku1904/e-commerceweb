@@ -1,13 +1,15 @@
 // import SignIn from "./signIn/SigIn";
 // import SignUp from "../comp/signUp/SignUp";
-import ApplicationRoutes from "./routes/Routes";
+import ApplicationRoutes from "../routes/Routes";
+import Dashbord from "./dashboard/Dashbord";
 
 
 function App() {
   return (
     <div className="App">
        {/* <SignUp/> */}
-      <ApplicationRoutes />
+      {/* <ApplicationRoutes /> */}
+      <Dashbord/>
        {/* <SignIn/> */}
     </div>
   );
