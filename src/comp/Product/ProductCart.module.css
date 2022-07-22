@@ -2,11 +2,16 @@
   max-width: 277px;
   min-width: 277px;
   border: 1px solid #b1b1b1;
-margin-bottom: 38px;
+  margin-bottom: 38px;    
 }
 
+.CartIconBlanck{
+    display: flex;
+    justify-content: end;
+    padding: 11px 12px 0 0;
+}
 .ProductImage{
-  padding: 21px 26px 16px 26px;
+  padding: 5px 26px 16px 26px;
   border-bottom: 1px solid #b1b1b1;
 }
 
