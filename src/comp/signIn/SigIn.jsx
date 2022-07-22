@@ -58,7 +58,7 @@ const handleSubmit = (e) =>{
             value={ldata.password}
             type="text"
           ></input>
-          <button type="submit">CONTINUE</button>
+          <button src={Style.SignInButton} type="submit">CONTINUE</button>
         </form>
       </div>
       <div className={Style.link}>

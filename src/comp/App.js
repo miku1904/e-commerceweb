@@ -9,7 +9,7 @@ function App() {
     <div className="App">
        {/* <SignUp/> */}
       {/* <ApplicationRoutes /> */}
-      <Dashbord/>
+      <Dashbord/>  
        {/* <SignIn/> */}
     </div>
   );

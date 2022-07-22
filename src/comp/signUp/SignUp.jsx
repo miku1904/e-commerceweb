@@ -6,11 +6,12 @@ import { collection, addDoc } from "firebase/firestore";
 import { Link } from "react-router-dom";
 
 const SignUp = () => {
-  const [data, setData] =useState({
+  const [data, setData] = useState({
     name:"",
     email:"",
-    password:""
-  }); 
+    password:"",
+    role:"user"
+  });
 
   function handleChange(e) {
     const value = e.target.value;
@@ -29,6 +30,7 @@ const SignUp = () => {
           name: data.name,
           email: data.email,
           password: data.password,
+          role:data.role,
         });
       })
       .catch((error) => { 
@@ -69,7 +71,7 @@ const SignUp = () => {
             name="password"
             onChange={handleChange}
           ></input>
-          <button type="submit">CONTINUE</button>
+          <button className={Style.SigupButton}type="submit">CONTINUE</button>
         </form>
       </div>
       <div className={Style.link}>
